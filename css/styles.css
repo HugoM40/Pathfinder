@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@300&display=swap');
+
+body {
+    background-color: #100F0F;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+#seleccionM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    color: #0F3D3E;
+    font-size: 34px;
+    font-family: 'Aboreto', cursive;
+}
+h3 {
+    color: #0F3D3E;
+    font-size: 34px;
+    font-family: 'Aboreto', cursive;
+}
+
+.subTitle {
+    font-size: 24px;
+    color: #E2DCC8;
+}
+
+.cardBox {
+    display: flex;
+    gap: 15px;
+}
+
+.tarjeta-mokepon {
+    width: 205px;
+    height: 310px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.tarjeta-mokepon img {
+    height: 235px;
+    width: 210px;
+}
+
+.cardBox p {
+    color: #E2DCC8;
+    font-size: 21px;
+}
+
+#boton-monstruo {
+    background-color: #0F3D3E;
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #E2DCC8;
+    font-family: 'Poppins', sans-serif;
+}
+
+#seleccionA {
+    flex-direction: column;
+    align-items: center;
+}
+
+.ataques {
+    background-color: #0F3D3E;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 10px;
+    width: 90px;
+    height: 50px;
+    color: #E2DCC8;
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes {
+    width: 200px;
+    color: #E2DCC8;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+
+
+}
+
+#boton-reiniciar {
+    cursor: pointer;
+    background-color: #0F3D3E;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    color: #E2DCC8;
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.combates {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-items: center;
+    color: #E2DCC8;
+    background-color: #0F3D3E;
+    border-radius: 50px;
+
+}
+
+.jugadorAtaques,
+.enemigoAtaques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lookMap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleMap {
+    font-size: 20px;
+    color: #E2DCC8;
+}
+
+#movimiento button {
+    background-color: #0F3D3E;
+    height: 40px;
+    width: 127px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #E2DCC8;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background-color: #0F3D3E;
+
+}
+
+@media (max-width: 400px) {
+    .cardBox {
+        flex-direction: column;
+    }
+
+    .botones {
+        display: grid;
+    }
+
+    .combates {
+        grid-template-columns: 140px 140px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cardBox {
+        flex-direction: column;
+    }
+
+    .botones {
+        display: grid;
+    }
+
+    .combates {
+        grid-template-columns: 170px 170px;
+    }
+
+    #movimiento button {
+        display: flex;
+        width: 140px;
+        height: 40px;
+        margin-top: 15px;
+        border-radius: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+}

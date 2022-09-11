@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathfinder</title>
+    <link rel="icon" href="resources/img/new.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <section id="seleccionM">
+        <h1 id="title">Pathfinder</h1>
+        <h2 class="subTitle">Elige un monstruo:</h2>
+        <div id="containerCarBox" class="cardBox"></div>
+        <button id="boton-monstruo">Seleccionar</button>
+    </section>
+
+    <section id="lookMap">
+        <h3 id="titleMap">Recorre el mapa con tu monstruo</h3>
+        <canvas id="map"></canvas>
+        <div id="movimiento">
+            <button ontouchstart ="moverDerecha()" ontouchend = "moverDerecha()" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Mover Derecha</button>
+            <button ontouchstart ="moverIzquierda()" ontouchend = "detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Mover Izquierda</button>
+            <button ontouchstart ="moverArriba()" ontouchend = "detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Mover Arriba</button>
+            <button ontouchstart ="moverAbajo()" ontouchend = "detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Mover Abajo</button>
+        </div>
+    </section>
+    <section id="seleccionA">
+        <h3 id="subTitle">Pathfinder</h3>
+        <h2 class="subTitle">Elige un ataque:</h2>
+        <div id="containerAtaques" class="botones"></div>
+        <div id="mensajes">
+            <p id="resultado">Mucha Suerte
+                <p />
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div>
+        <div id="containerCombat" class="combates">
+            <div class="jugadorAtaques">
+                <p id="vidasJugador">0</p>
+                <p id="nameMonstruo"></p>
+                <div id="ataquesJugador"></div>
+            </div>
+            <div class="enemigoAtaques">
+                <p id="vidasEnemigos">0</p>
+                <p id="enemigoMonstruo"></p>
+                <div id="ataquesEnemigo"></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
